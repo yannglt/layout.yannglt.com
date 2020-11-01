@@ -25,16 +25,20 @@ body
   padding-right: max(19px, 8vw)
 
   +adapt($bkp-mobile)
-    padding-left: clamp(27px, 6.64vw, 44px)
-    padding-right: clamp(27px, 6.64vw, 44px)
+    padding-left: clamp(27px, 6.64vw, 32px)
+    padding-right: clamp(27px, 6.64vw, 32px)
 
   +adapt($bkp-tablet)
-    padding-left: 44px
-    padding-right: 44px
+    padding-left: 32px
+    padding-right: 32px
+
+  +adapt($bkp-desktop-sd)
+    padding-left: 32px
+    padding-right: 32px
 
   +adapt($bkp-desktop-hd)
-    padding-left: min(44px, 116px)
-    padding-right: min(44px, 116px)
+    padding-left: min(32px, 116px)
+    padding-right: min(32px, 116px)
 
 .gridSystem
   margin: 0 auto
@@ -46,10 +50,11 @@ body
     grid-column-gap: 40px
 
   +adapt($bkp-tablet)
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(8, 1fr)
+    grid-column-gap: 32px
 
   +adapt($bkp-desktop-sd)
-    grid-template-columns: repeat(8, 1fr)
+    grid-template-columns: repeat(10, 1fr)
 
   +adapt($bkp-desktop-hd)
     grid-template-columns: repeat(12, 1fr)
